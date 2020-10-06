@@ -1,0 +1,86 @@
+// CONTACT NAVBAR
+nav.contact-navbar
+  width: 100%
+  margin: 0
+  padding: 0
+  background-color: $brand-main
+  overflow: hidden
+  z-index: 999
+
+div.nav-left
+  float: left
+  margin: 10px 0 5px 0
+  a
+    color: $brand-light
+    font-size: 15px
+    padding: 0 20px 10px
+    text-decoration: none
+    vertical-align: middle
+
+@media screen and (max-width: 680px)
+  div.nav-left
+    margin: 10px 0 5px 0
+    a
+      padding: 0 10px 10px
+div.nav-right
+  padding: 10px 0 8px 0
+  a
+    color: $brand-light
+    text-decoration: none
+    vertical-align: middle
+    font-size: 24px!important
+// CONTACT NAVBAR ENDS HERE
+
+// MAIN NAVBAR STYLING
+
+div.main-nav
+  margin: 0
+  padding: 0
+  ul.nav_ul
+    list-style: none
+    margin-left: 4rem
+    display: flex
+    flex-direction: row
+    flex: 1
+    justify-content: center
+    align-items: center
+    position: relative
+    left: 5vw
+    li
+      // margin-top: 0.2em
+      padding: 0 20px
+      vertical-align: middle
+      align-items: center
+      padding-top: -15px
+      a
+        font-size: 1.5rem
+        color: $brand-dark
+        text-decoration: none
+        &:hover
+          text-decoration: none
+          color: lighten($brand-dark, 20%)
+.active
+  color: $brand-main !important
+
+
+@media screen and (max-width:680px)
+  div.main-nav
+    ul.nav_ul
+      display: none
+
+@media screen and (max-width: 680px)
+  div.main-nav
+    ul.nav_ul.responsive-main
+      display: flex !important
+      flex-direction: column
+      flex: 1
+      float: none !important
+      height: 100vh !important
+      right: 60rem!important
+      position: relative
+      // background-color: $brand-primary
+      // width: 100vw
+      // padding: 3rem
+      li
+        padding: 1.5rem !important
+        font-weight: 900
