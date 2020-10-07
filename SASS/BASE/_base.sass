@@ -48,9 +48,69 @@ body
       height: 5px
       background-color: $brand-main
       border: none
+      // margin: 0!important
+      text-align: center
+  div.about_text
+    text-align: center
+    line-height: 1.2
+    font-size: 20px
+  img.about_img
+    height: 300px
+    width: 400px
+    display: block
+    margin: auto
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5)
+
+
 
 @media screen and(min-width: 680px)
   div.about_text
-    text-align: center
-    font-size: 25px
+    text-align: left
+    font-size: 30px
     line-height: 1.2
+    padding: 10px
+    p
+      margin-top: 0
+div.box_event
+  color: #ffffff
+  margin: 20px
+  padding: 40px
+  background-color: rgba(0, 0, 0, .5)
+  h1.event_header
+    font-size: 2rem
+  p
+    line-height: 1.4
+    font-size: 19px
+
+div.events_boxes
+  background-color: rgba(0, 0, 0, .5)
+  padding: 40px
+
+div.date_box
+  background-color: $brand-main
+  text-align: center
+  vertical-align: middle
+  color: $brand-primary
+  padding: 40px 20px
+  span.event_date
+    font-size: 3rem
+    font-weight: 900
+    line-height: 1
+div.event_details
+  background-color: #ffffff
+  button.event_btn
+    padding: 7px 12px
+    font-weight: 800
+    cursor: pointer
+    background-color: #ffffff
+    color: $brand-main
+    margin-bottom: 20px
+    border: 1px solid #000
+    font-size: 16px
+    transition: all .5s ease-in-out
+    &:hover
+      background-color: $brand-main
+      color: #ffffff
+
+div.box_margin
+  margin-bottom: 20px
