@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
     <title>YONAAC | Welcome</title>
       <script src="https://kit.fontawesome.com/dd6a503619.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="PLUGINS\bootstrap\css\bootstrap-grid.min.css">
+      <link rel="stylesheet" href="PLUGINS\bootstrap\css\bootstrap.min.css">
     <link rel="stylesheet" href="CSS\other.css">
     <link rel="stylesheet" href="CSS\style.css">
     <link rel="stylesheet" href="CSS\slick\slick.css">
@@ -16,7 +18,7 @@
 <!--END OF PRELOADER  -->
 
 <!--CONTACT NAVIGATION BAR  -->
-<nav class="contact-navbar">
+<nav class="contact-navbar container-fluid">
 <div class="row">
 <div class="offset-md-1 col-lg-6 col-sm-12">
 <div class="nav-left">
@@ -36,12 +38,12 @@
   <!--CONTACT NAVIGATION BAR  ENDS here-->
 
     <!-- MAIN NAVIGATION BAR -->
-<section class="navigation-bar" id="navbar">
+<section class="navigation-bar container-fluid" id="navbar">
   <div class="row">
     <div class="col"></div>
     <div class="col-3">
       <div class="brand area">
-        <a href="index.html"><img class="nav_logo" src="ASSETS\nav_logo.png" alt="brand_logo" /><a/>
+        <a href="index.html"><img class="nav_logo" src="ASSETS\nav_logo3.png" alt="brand_logo" /><a/>
       </div>
     </div>
     <div class="col-7">
@@ -51,17 +53,27 @@
           <li><a href="#" class="super-anchor">About</a></li>
           <li><a href="#" class="super-anchor">Events</a></li>
         <li><a href="#" class="super-anchor">Register</a></li>
+        <li><a href="#" class="super-anchor">Gallery</a></li>
         <li><a href="#" class="super-anchor">Donate</a></li>
+        <li><a href="#" class="super-anchor visible_mobile">Login</a></li>
         </ul>
       </div>
-      <button type="button" name="button" class="responsive_drop" onclick="maindrop()">&#x2630;</button>
+      <!-- <button type="button" name="button" class="responsive_drop" onclick="maindrop()">&#x2630;</button> -->
+      <div id="burger-container">
+        <div id="burger" onclick="maindrop()">
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+        </div>
+      </div>
     </div>
     <div class="col"></div>
   </div>
 </section>
 
         <!-- HERO SECTION -->
-    <section class="img-bg">
+    <section class="img-bg container-fluid">
 
         <div class="row">
           <div class="col-sm-7 col-md-5">
@@ -92,7 +104,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-5">
-          <img class="about_img" src="ASSETS\img5.jpg" alt="about img">
+          <img class="img-fluid about_img" src="ASSETS\img5.jpg" alt="about img">
       </div>
       </div>
 </section>
@@ -154,9 +166,75 @@
       </div>
 </section>
 
+<section class="get_in_touch">
+  <div class="row">
+  <div class="col-md"></div>
+  <div class="col-sm-12 col-md-6">
+    <div class="section_header">
+      <h1>Get In Touch </h1>
+      <hr />
+    </div>
+  </div>
+  <div class="col-md"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-4 color_form">
+    <div class="row">
+      <div class="col-12">
+        <!-- <i class="fontcss fas fa-envelope fa-4x"></i> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 color_text">
+        <!-- <h1>Contact Us</h1>
+        <p>We would love to hear from you !</p> -->
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <form class="get_in_touch_form" method="post">
+        <label class="form_label" for="first_name">First Name:</label><br>
+        <input class="input_lenth" type="text" name="first_name" placeholder="Enter First Name" required><br>
+        <label class="form_label"  for="last_name">Last Name:</label><br>
+        <input class="input_lenth"  type="text" name="last_name" placeholder="Enter Last Name" required><br>
+        <label class="form_label"  for="email">Email:</label><br>
+        <input class="input_lenth"  type="email" name="email" placeholder="Enter Your Email" required><br>
+        <label class="form_label"  for="message">message:</label><br>
+        <textarea class="form_textarea" name="message" rows="14" cols="80"></textarea><br>
+        <button class="submit_btn" type="submit" name="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
 
+<section class="footer">
+    <footer class="yonaac_footer">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <ul class="footer_ul first_block">
+            <li class="footer_li"><i class="fas fa-map-marker"></i>     ascension apostolic church Nyokuru town</li>
+            <li class="footer_li"><i class="fas fa-mobile"></i> <a href="tel:08056572107">(+234-7033265555)</a></li>
+            <li class="footer_li"><i class="fas fa-envelope email"></i>  <a href="mailto:"target="_blank" class="mobile padding">   info@yonaac.org</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <ul class="footer_ul second_block">
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Event</a> </li>
+            <li> <a href="#">Gallery</a> </li>
+            <li> <a href="#">Donate</a> </li>
+            <li> <a href="#">Register</a> </li>
+            <li> <a href="#">Login</a> </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 first_block">
+          <span>  <p><strong>YONAAC</strong> is a Youth body, with Vision and Mission of molding formidable Christian Youths and Leaders for the success of our church administration and that of the society at large.</span>
 
-
+            <i class="fab fa-facebook-square fa-2x"></i> <i class="fab fa-twitter-square fa-2x"></i>  <i class="fab fa-linkedin fa-2x"></i>  <i class="fab fa-instagram-square fa-2x"></i>
+        </div>
+      </div>
+    </footer>
+</section>
 
 
 
@@ -183,11 +261,18 @@
 
 
   <script type="text/javascript" src="JAVASCRIPT\main.js"></script>
-  <!-- <script type="text/javascript" src="PLUGINS\slick.min.js"></script> -->
+  <script type="text/javascript" src="PLUGINS\slick.min.js"></script>
   <script type="text/javascript" src="PLUGINS\fontawesome.js"></script>
-    <script src="PLUGINS\jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="PLUGINS\bootstrap\js\bootstrap.js"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#burger-container").on('click', function(){
+            $(this).toggleClass("open");
+        });
+      });
+    </script>
   </body>
 </html>

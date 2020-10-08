@@ -29,6 +29,9 @@ div.nav-right
     text-decoration: none
     vertical-align: middle
     font-size: 24px!important
+@media screen and(max-width: 680px)
+  nav.contact-navbar
+    display: none
 // CONTACT NAVBAR ENDS HERE
 
 // MAIN NAVBAR STYLING
@@ -37,6 +40,7 @@ div.main-nav
   margin: 0
   padding: 0
   ul.nav_ul
+    transition: all .5s ease-in
     list-style: none
     margin-left: 4rem
     display: flex
@@ -46,6 +50,7 @@ div.main-nav
     align-items: center
     position: relative
     left: 5vw
+    margin-top: 20px
     li
       // margin-top: 0.2em
       padding: 0 20px
@@ -82,5 +87,5 @@ div.main-nav
       // width: 100vw
       // padding: 3rem
       li
-        padding: 1.5rem !important
+        padding: 1.1rem !important
         font-weight: 900

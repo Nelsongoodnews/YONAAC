@@ -23,13 +23,13 @@ button.img-btn
   padding: 10px 20px
   font-size: 20px
   cursor: pointer
-  background-color: $brand-primary
+  background-color: #ffffff
   color: $brand-main
   border: none
   transition: all .5s ease-in-out
   &:hover
     background-color: $brand-main
-    color: $brand-primary
+    color: #ffffff
 
 
 @media screen and(max-width: 680px)
@@ -39,3 +39,58 @@ button.img-btn
     top: 0
     position: absolute
     vertical-align: middle
+
+@media screen and(min-width: 680px)
+  button.submit_btn
+    padding: 10px 35px
+    background-color: $brand-main
+    margin-top: 15px
+    border: none
+    font-size: 20px
+    margin-bottom: 2rem
+    font-weight: 700
+    color: #ffffff
+    cursor: pointer
+    border-radius: 3px
+    &:hover
+      background-color: darken($brand-main, 10%)
+
+@media screen and(max-width: 680px)
+  button.submit_btn
+    padding: 10px 25px
+    background-color: $brand-main
+    margin-top: 15px
+    border: none
+    font-size: 18px
+    margin-bottom: 2rem
+    font-weight: 700
+    color: #ffffff
+    cursor: pointer
+    border-radius: 3px
+    &:hover
+      background-color: darken($brand-main, 10%)
+@media screen and (min-width: 680px)
+  #burger-container
+    display: none
+@media screen and (max-width: 680px)
+  #burger-container
+    position: absolute
+    display: block!important
+    right: 0
+    top: 0
+    position: absolute
+    vertical-align: middle
+    width: 50px
+    margin-top: 10px
+  #burger
+    cursor: pointer
+    display: block
+    span
+      background-color: #000
+      display: block
+      width: 50px
+      height: 5px
+      margin-bottom: 5px
+      position: relative
+      top: 0
+      transition: all ease-in-out 0.5s
